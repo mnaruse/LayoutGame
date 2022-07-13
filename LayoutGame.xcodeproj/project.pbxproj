@@ -15,6 +15,17 @@
 		28632C63287F001800F07F80 /* LayoutGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28632C62287F001800F07F80 /* LayoutGameUITests.swift */; };
 		28632C65287F001800F07F80 /* LayoutGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28632C64287F001800F07F80 /* LayoutGameUITestsLaunchTests.swift */; };
 		28632C73287F083200F07F80 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28632C72287F083200F07F80 /* HomeView.swift */; };
+		28632C79287F145700F07F80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28632C78287F145700F07F80 /* Assets.xcassets */; };
+		28632C7F287F145700F07F80 /* LayoutGameWatchApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 28632C7E287F145700F07F80 /* LayoutGameWatchApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		28632C88287F145700F07F80 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28632C87287F145700F07F80 /* NotificationController.swift */; };
+		28632C8A287F145700F07F80 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28632C89287F145700F07F80 /* NotificationView.swift */; };
+		28632C8C287F145700F07F80 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28632C8B287F145700F07F80 /* ComplicationController.swift */; };
+		28632C8E287F145900F07F80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28632C8D287F145900F07F80 /* Assets.xcassets */; };
+		28632C91287F145900F07F80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28632C90287F145900F07F80 /* Preview Assets.xcassets */; };
+		28632CAC287F145900F07F80 /* LayoutGameWatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 28632C76287F145400F07F80 /* LayoutGameWatchApp.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		28632CBB287F14AD00F07F80 /* LayoutGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28632C47287F001600F07F80 /* LayoutGameApp.swift */; };
+		28632CBC287F14B200F07F80 /* Try001View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28632C49287F001600F07F80 /* Try001View.swift */; };
+		28632CBD287F14B500F07F80 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28632C72287F083200F07F80 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +43,46 @@
 			remoteGlobalIDString = 28632C43287F001600F07F80;
 			remoteInfo = LayoutGame;
 		};
+		28632C80287F145700F07F80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28632C3C287F001600F07F80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28632C7D287F145700F07F80;
+			remoteInfo = "LayoutGameWatchApp WatchKit Extension";
+		};
+		28632CAA287F145900F07F80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28632C3C287F001600F07F80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28632C75287F145400F07F80;
+			remoteInfo = LayoutGameWatchApp;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		28632CB0287F145900F07F80 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				28632C7F287F145700F07F80 /* LayoutGameWatchApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28632CB4287F145900F07F80 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				28632CAC287F145900F07F80 /* LayoutGameWatchApp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		28632C44287F001600F07F80 /* LayoutGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +96,16 @@
 		28632C62287F001800F07F80 /* LayoutGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutGameUITests.swift; sourceTree = "<group>"; };
 		28632C64287F001800F07F80 /* LayoutGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		28632C72287F083200F07F80 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		28632C76287F145400F07F80 /* LayoutGameWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutGameWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28632C78287F145700F07F80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28632C7E287F145700F07F80 /* LayoutGameWatchApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LayoutGameWatchApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28632C87287F145700F07F80 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		28632C89287F145700F07F80 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		28632C8B287F145700F07F80 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		28632C8D287F145900F07F80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28632C90287F145900F07F80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		28632C92287F145900F07F80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28632C93287F145900F07F80 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +130,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		28632C7B287F145700F07F80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,6 +146,8 @@
 				28632C46287F001600F07F80 /* LayoutGame */,
 				28632C57287F001800F07F80 /* LayoutGameTests */,
 				28632C61287F001800F07F80 /* LayoutGameUITests */,
+				28632C77287F145400F07F80 /* LayoutGameWatchApp */,
+				28632C82287F145700F07F80 /* LayoutGameWatchApp WatchKit Extension */,
 				28632C45287F001600F07F80 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +158,8 @@
 				28632C44287F001600F07F80 /* LayoutGame.app */,
 				28632C54287F001800F07F80 /* LayoutGameTests.xctest */,
 				28632C5E287F001800F07F80 /* LayoutGameUITests.xctest */,
+				28632C76287F145400F07F80 /* LayoutGameWatchApp.app */,
+				28632C7E287F145700F07F80 /* LayoutGameWatchApp WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +201,36 @@
 			path = LayoutGameUITests;
 			sourceTree = "<group>";
 		};
+		28632C77287F145400F07F80 /* LayoutGameWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				28632C78287F145700F07F80 /* Assets.xcassets */,
+			);
+			path = LayoutGameWatchApp;
+			sourceTree = "<group>";
+		};
+		28632C82287F145700F07F80 /* LayoutGameWatchApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				28632C87287F145700F07F80 /* NotificationController.swift */,
+				28632C89287F145700F07F80 /* NotificationView.swift */,
+				28632C8B287F145700F07F80 /* ComplicationController.swift */,
+				28632C8D287F145900F07F80 /* Assets.xcassets */,
+				28632C92287F145900F07F80 /* Info.plist */,
+				28632C93287F145900F07F80 /* PushNotificationPayload.apns */,
+				28632C8F287F145900F07F80 /* Preview Content */,
+			);
+			path = "LayoutGameWatchApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		28632C8F287F145900F07F80 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				28632C90287F145900F07F80 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,10 +242,12 @@
 				28632C40287F001600F07F80 /* Sources */,
 				28632C41287F001600F07F80 /* Frameworks */,
 				28632C42287F001600F07F80 /* Resources */,
+				28632CB4287F145900F07F80 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				28632CAB287F145900F07F80 /* PBXTargetDependency */,
 			);
 			name = LayoutGame;
 			productName = LayoutGame;
@@ -187,6 +290,40 @@
 			productReference = 28632C5E287F001800F07F80 /* LayoutGameUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		28632C75287F145400F07F80 /* LayoutGameWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28632CB1287F145900F07F80 /* Build configuration list for PBXNativeTarget "LayoutGameWatchApp" */;
+			buildPhases = (
+				28632C74287F145400F07F80 /* Resources */,
+				28632CB0287F145900F07F80 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28632C81287F145700F07F80 /* PBXTargetDependency */,
+			);
+			name = LayoutGameWatchApp;
+			productName = LayoutGameWatchApp;
+			productReference = 28632C76287F145400F07F80 /* LayoutGameWatchApp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		28632C7D287F145700F07F80 /* LayoutGameWatchApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28632CAD287F145900F07F80 /* Build configuration list for PBXNativeTarget "LayoutGameWatchApp WatchKit Extension" */;
+			buildPhases = (
+				28632C7A287F145700F07F80 /* Sources */,
+				28632C7B287F145700F07F80 /* Frameworks */,
+				28632C7C287F145700F07F80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LayoutGameWatchApp WatchKit Extension";
+			productName = "LayoutGameWatchApp WatchKit Extension";
+			productReference = 28632C7E287F145700F07F80 /* LayoutGameWatchApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,6 +345,12 @@
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = 28632C43287F001600F07F80;
 					};
+					28632C75287F145400F07F80 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					28632C7D287F145700F07F80 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 				};
 			};
 			buildConfigurationList = 28632C3F287F001600F07F80 /* Build configuration list for PBXProject "LayoutGame" */;
@@ -226,6 +369,8 @@
 				28632C43287F001600F07F80 /* LayoutGame */,
 				28632C53287F001800F07F80 /* LayoutGameTests */,
 				28632C5D287F001800F07F80 /* LayoutGameUITests */,
+				28632C75287F145400F07F80 /* LayoutGameWatchApp */,
+				28632C7D287F145700F07F80 /* LayoutGameWatchApp WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -251,6 +396,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28632C74287F145400F07F80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28632C79287F145700F07F80 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28632C7C287F145700F07F80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28632C91287F145900F07F80 /* Preview Assets.xcassets in Resources */,
+				28632C8E287F145900F07F80 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +467,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		28632C7A287F145700F07F80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28632C88287F145700F07F80 /* NotificationController.swift in Sources */,
+				28632C8C287F145700F07F80 /* ComplicationController.swift in Sources */,
+				28632CBB287F14AD00F07F80 /* LayoutGameApp.swift in Sources */,
+				28632CBC287F14B200F07F80 /* Try001View.swift in Sources */,
+				28632CBD287F14B500F07F80 /* HomeView.swift in Sources */,
+				28632C8A287F145700F07F80 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -317,6 +492,16 @@
 			isa = PBXTargetDependency;
 			target = 28632C43287F001600F07F80 /* LayoutGame */;
 			targetProxy = 28632C5F287F001800F07F80 /* PBXContainerItemProxy */;
+		};
+		28632C81287F145700F07F80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28632C7D287F145700F07F80 /* LayoutGameWatchApp WatchKit Extension */;
+			targetProxy = 28632C80287F145700F07F80 /* PBXContainerItemProxy */;
+		};
+		28632CAB287F145900F07F80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28632C75287F145400F07F80 /* LayoutGameWatchApp */;
+			targetProxy = 28632CAA287F145900F07F80 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -569,6 +754,122 @@
 			};
 			name = Release;
 		};
+		28632CAE287F145900F07F80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LayoutGameWatchApp WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = D36U9R66JG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LayoutGameWatchApp WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LayoutGameWatchApp WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = LayoutGameWatchApp_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.m-rn.LayoutGame.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		28632CAF287F145900F07F80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LayoutGameWatchApp WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = D36U9R66JG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LayoutGameWatchApp WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LayoutGameWatchApp WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = LayoutGameWatchApp_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.m-rn.LayoutGame.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		28632CB2287F145900F07F80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D36U9R66JG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = LayoutGameWatchApp_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = LayoutGameWatchApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.m-rn.LayoutGame";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.m-rn.LayoutGame.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		28632CB3287F145900F07F80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D36U9R66JG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = LayoutGameWatchApp_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = LayoutGameWatchApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.m-rn.LayoutGame";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.m-rn.LayoutGame.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -604,6 +905,24 @@
 			buildConfigurations = (
 				28632C6F287F001800F07F80 /* Debug */,
 				28632C70287F001800F07F80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28632CAD287F145900F07F80 /* Build configuration list for PBXNativeTarget "LayoutGameWatchApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28632CAE287F145900F07F80 /* Debug */,
+				28632CAF287F145900F07F80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28632CB1287F145900F07F80 /* Build configuration list for PBXNativeTarget "LayoutGameWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28632CB2287F145900F07F80 /* Debug */,
+				28632CB3287F145900F07F80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
