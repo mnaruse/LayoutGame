@@ -1,0 +1,22 @@
+# https://github.com/nicklockwood/SwiftFormat/blob/master/Rules.md
+
+# file options
+
+# --exclude Tests/XCTestManifests.swift,Snapshots,Pods
+--exclude BuildTools,LayoutGame/Generated
+
+# format options 
+--indent 4
+--wraparguments before-first
+--wrapparameters before-first
+--wrapcollections before-first
+
+# disable
+--disable emptyBraces
+--disable numberFormatting
+--disable redundantLet
+--disable redundantRawValues
+--disable trailingCommas
+--disable unusedArguments
+--disable redundantReturn
+--disable preferKeyPath # Convert trivial map { $0.foo } closures to keyPath-based syntax.
