@@ -11,6 +11,12 @@
 - 上記ツイート時、書いたコードはツイート本文に書くでも、エディタ等のスクリーンショットを追加してもよいですし、Gist や Zenn、Qiita などに書いてそこへのリンクを併記でも構いません。
 - https://twitter.com/treastrain/status/1547151607938560000?s=20&t=wqB7qr6d4sPbbsZ6Udid5A
 
+## 開発環境
+
+- Xcode 13.4.1
+- Swift 5.6
+- macOS 12.4
+
 ## No.
 
 ### 001
