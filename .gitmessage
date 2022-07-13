@@ -1,0 +1,55 @@
+# :emoji: Type: Summary
+# No more than 50 chars. #### 50 chars is here: #
+
+# Remember blank line between title and body.
+
+# Body: Explain *what* and *why* (not *how*). Include task ID.
+# Wrap at 72 chars. ################################## which is here: #
+
+# At the end: Include Co-authored-by for all contributors. 
+# Include at least one empty line before it. Format: 
+# Co-authored-by: name <user@users.noreply.github.com>
+#
+# How to Write a Git Commit Message:
+# https://chris.beams.io/posts/git-commit/
+#
+# 1. Separate subject from body with a blank line
+# 2. Limit the subject line to 50 characters
+# 3. Capitalize the subject line
+# 4. Do not end the subject line with a period
+# 5. Use the imperative mood in the subject line
+# 6. Wrap the body at 72 characters
+# 7. Use the body to explain what and why vs. how
+#
+# 
+# for http://memo.goodpatch.co/2016/07/beautiful-commits-with-emojis/
+# <Type> must be one of the following:
+# :sparkles: feat: 
+#   A new feature 新しい機能
+# :bug: fix: 
+#   A bug fix バグの修正
+# :pencil2: docs: 
+#   Documentation only changes ドキュメントのみの変更
+# :shirt: style: 
+#   Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc) 空白、フォーマット、セミコロン追加など
+# :recycle: refactor: 
+#   A code change that neither fixes a bug nor adds a feature 仕様に影響がないコード改善(リファクタ)
+# :rocket: perf: 
+#   A code change that improves performance パフォーマンス向上関連
+# :green_heart: test: 
+#   Adding missing or correcting existing tests. Fixing CI Build テスト関連
+# :wrench: chore: 
+#   Changes to the build process or auxiliary tools and libraries such as documentation generation ビルド、補助ツール、ライブラリ関連
+# :bookmark: release: 
+#   Releasing / Version tags
+#
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch is up to date with 'origin/master'.
+#
+# Changes to be committed:
+#       new file:   installation.md
+#
+
