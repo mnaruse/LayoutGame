@@ -8,7 +8,6 @@
 import XCTest
 
 class LayoutGameUITestsLaunchTests: XCTestCase {
-
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
     }
