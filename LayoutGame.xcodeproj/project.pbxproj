@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		28632C48287F001600F07F80 /* LayoutGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28632C47287F001600F07F80 /* LayoutGameApp.swift */; };
-		28632C4A287F001600F07F80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28632C49287F001600F07F80 /* ContentView.swift */; };
+		28632C4A287F001600F07F80 /* Try001View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28632C49287F001600F07F80 /* Try001View.swift */; };
 		28632C4C287F001700F07F80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28632C4B287F001700F07F80 /* Assets.xcassets */; };
 		28632C4F287F001700F07F80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28632C4E287F001700F07F80 /* Preview Assets.xcassets */; };
 		28632C59287F001800F07F80 /* LayoutGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28632C58287F001800F07F80 /* LayoutGameTests.swift */; };
 		28632C63287F001800F07F80 /* LayoutGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28632C62287F001800F07F80 /* LayoutGameUITests.swift */; };
 		28632C65287F001800F07F80 /* LayoutGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28632C64287F001800F07F80 /* LayoutGameUITestsLaunchTests.swift */; };
+		28632C73287F083200F07F80 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28632C72287F083200F07F80 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		28632C44287F001600F07F80 /* LayoutGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28632C47287F001600F07F80 /* LayoutGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutGameApp.swift; sourceTree = "<group>"; };
-		28632C49287F001600F07F80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		28632C49287F001600F07F80 /* Try001View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Try001View.swift; sourceTree = "<group>"; };
 		28632C4B287F001700F07F80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28632C4E287F001700F07F80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		28632C54287F001800F07F80 /* LayoutGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LayoutGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		28632C5E287F001800F07F80 /* LayoutGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LayoutGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28632C62287F001800F07F80 /* LayoutGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutGameUITests.swift; sourceTree = "<group>"; };
 		28632C64287F001800F07F80 /* LayoutGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		28632C72287F083200F07F80 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				28632C47287F001600F07F80 /* LayoutGameApp.swift */,
-				28632C49287F001600F07F80 /* ContentView.swift */,
+				28632C72287F083200F07F80 /* HomeView.swift */,
+				28632C49287F001600F07F80 /* Try001View.swift */,
 				28632C4B287F001700F07F80 /* Assets.xcassets */,
 				28632C4D287F001700F07F80 /* Preview Content */,
 			);
@@ -279,7 +282,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28632C4A287F001600F07F80 /* ContentView.swift in Sources */,
+				28632C73287F083200F07F80 /* HomeView.swift in Sources */,
+				28632C4A287F001600F07F80 /* Try001View.swift in Sources */,
 				28632C48287F001600F07F80 /* LayoutGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
