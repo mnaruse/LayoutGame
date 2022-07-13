@@ -9,12 +9,19 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text("Hello, world!")
+        List(0 ..< 1) { item in
+            NavigationLink(destination: Try001View()) {
+                Text("001")
+            }
+        }
+        .navigationTitle("レイアウト一本勝負")
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        NavigationView {
+            HomeView()
+        }
     }
 }
