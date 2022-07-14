@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        List(0 ..< 1) { item in
+        List {
             NavigationLink(destination: Try001View()) {
                 Text("001")
             }
