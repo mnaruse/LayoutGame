@@ -30,10 +30,10 @@ struct Topic002CardView: View {
                     .font(.headline)
                 Spacer()
                 Text(RelativeDateTimeFormatter().localizedString(for: vital.date, relativeTo: Date.now))
-                    .font(.subheadline)
+                    .font(.footnote)
                     .foregroundColor(.secondary)
             }
-            Spacer()
+            Spacer(minLength: 16)
             switch vital.value {
             case let .number(value: value, style: style, customUnit: customUnit):
 
@@ -49,11 +49,12 @@ struct Topic002CardView: View {
 
             case let .measurement(value: value, unit: unit, formattedUnit: formattedUnit):
                 // TODO: フォントサイズ
+                // TODO: `formattedUnit` 使うこと
                 Text("\(String(format: "%.1f", value))\(unit.symbol)")
                     .font(.title)
             }
         }
-        .padding([.top, .bottom])
+        .padding(.vertical, 8)
     }
 
     func numberFormatter(style: NumberFormatter.Style) -> NumberFormatter {
