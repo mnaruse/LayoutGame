@@ -22,8 +22,7 @@ struct Topic002CardView: View {
                     .foregroundColor(vital.color)
                     .font(.headline)
                 Spacer()
-                // TODO: 相対日付の表示の仕方
-                Text(vital.date, style: .relative)
+                Text(RelativeDateTimeFormatter().localizedString(for: vital.date, relativeTo: Date.now))
                     .font(.subheadline)
                     .foregroundColor(.secondary)
             }
