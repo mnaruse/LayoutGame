@@ -13,6 +13,13 @@ struct Topic002CardView: View {
 
     var vital: Vital
 
+    var dateComponentsFormatter: DateComponentsFormatter {
+        let formatter = DateComponentsFormatter()
+        formatter.unitsStyle = .full
+        formatter.allowedUnits = [.day, .hour, .minute]
+        return formatter
+    }
+
     // MARK: Body
 
     var body: some View {
@@ -36,9 +43,9 @@ struct Topic002CardView: View {
                     .font(.title)
 
             case let .dateComponents(dateComponents):
-                // TODO: DateComponents をフォーマットする。
-//                Text(dateComponents, style: .offset)
-                Text("Hello, world!")
+                // TODO: フォントサイズ
+                Text(dateComponentsFormatter.string(from: dateComponents) ?? "")
+                    .font(.title)
 
             case let .measurement(value: value, unit: unit, formattedUnit: formattedUnit):
                 // TODO: フォントサイズ
