@@ -13,7 +13,7 @@ struct Topic002CardView: View {
 
     var vital: Vital
 
-    var dateComponentsFormatter: DateComponentsFormatter {
+    private var dateComponentsFormatter: DateComponentsFormatter {
         let formatter = DateComponentsFormatter()
         formatter.unitsStyle = .full
         formatter.allowedUnits = [.day, .hour, .minute]
@@ -51,6 +51,7 @@ struct Topic002CardView: View {
 
     // MARK: Private Functions
 
+    private func numberFormatter(style: NumberFormatter.Style) -> NumberFormatter {
         let formatter = NumberFormatter()
         formatter.numberStyle = style
         formatter.locale = .current
