@@ -64,7 +64,7 @@ struct Topic002CardView: View {
     private func modifiedText(_ text: String) -> Text {
         text
             .map {
-                if $0.isNumber {
+                if $0.isNumber || ["."].contains($0) {
                     return Text(String($0))
                         .font(.system(.title, design: .rounded).weight(.medium))
                 } else {
