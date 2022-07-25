@@ -36,31 +36,43 @@ struct Topic002CardView: View {
             Spacer(minLength: 16)
             switch vital.value {
             case let .number(value: value, style: style, customUnit: customUnit):
-
                 let formatter = numberFormatter(style: style)
-                // TODO: フォントサイズ
-                Text("\(formatter.string(from: value as NSNumber) ?? "")\(customUnit ?? "")")
-                    .font(.title)
+                modifiedText("\(formatter.string(from: value as NSNumber) ?? "")\(customUnit ?? "")")
 
             case let .dateComponents(dateComponents):
-                // TODO: フォントサイズ
-                Text(dateComponentsFormatter.string(from: dateComponents) ?? "")
-                    .font(.title)
+                modifiedText(dateComponentsFormatter.string(from: dateComponents) ?? "")
 
             case let .measurement(value: value, unit: unit, formattedUnit: formattedUnit):
-                // TODO: フォントサイズ
-                Text("\(String(format: "%.1f", value))\(formattedUnit?.symbol ?? unit.symbol)")
-                    .font(.title)
+                modifiedText("\(String(format: "%.1f", value))\(formattedUnit?.symbol ?? unit.symbol)")
             }
         }
         .padding(.vertical, 8)
     }
 
-    func numberFormatter(style: NumberFormatter.Style) -> NumberFormatter {
+    // MARK: Private Functions
+
         let formatter = NumberFormatter()
         formatter.numberStyle = style
         formatter.locale = .current
         return formatter
+    }
+
+    /// 数値か否かによって、テキストを装飾する。
+    /// - Parameter text: 装飾対象の文字列
+    /// - Returns: 装飾されたテキスト
+    private func modifiedText(_ text: String) -> Text {
+        text
+            .map {
+                if $0.isNumber {
+                    return Text(String($0))
+                        .font(.system(.title, design: .rounded).weight(.medium))
+                } else {
+                    return Text(String($0))
+                        .font(.callout.weight(.medium))
+                        .foregroundColor(.secondary)
+                }
+            }
+            .reduce(Text("")) { $0 + $1 }
     }
 }
 
