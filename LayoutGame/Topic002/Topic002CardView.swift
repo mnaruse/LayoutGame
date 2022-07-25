@@ -34,13 +34,13 @@ struct Topic002CardView: View {
 
     // MARK: Private Functions
 
-    /// 数値か否かによって、テキストを装飾する。
+    /// 目立つ装飾にすべきか否かを判別し、テキストを装飾する。
     /// - Parameter text: 装飾対象の文字列
     /// - Returns: 装飾されたテキスト
     private func modifiedText(_ text: String) -> Text {
         text
             .map {
-                if $0.isNumber || ["."].contains($0) {
+                if vital.value.shouldBeProminentDecoration($0) {
                     return Text(String($0))
                         .font(.system(.title, design: .rounded).weight(.medium))
                 } else {

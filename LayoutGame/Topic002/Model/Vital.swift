@@ -38,7 +38,7 @@ extension Vital {
         }
 
         // MARK: Internal Computed Properties
-        
+
         /// 値のデータを整理し、単位付きの文字列に変換した文字列。
         var text: String {
             switch self {
@@ -50,6 +50,15 @@ extension Vital {
             case let .measurement(value, unit, formattedUnit):
                 return "\(String(format: "%.1f", value))\(formattedUnit?.symbol ?? unit.symbol)"
             }
+        }
+
+        // MARK: Internal Functions
+
+        /// 文字を目立つ装飾にすべきか否か。
+        /// - Parameter character: 一文字
+        /// - Returns: `true` : 目立つ装飾にすべき。 `false` : 目立つ装飾にすべきでない。
+        func shouldBeProminentDecoration(_ character: String.Element) -> Bool {
+            character.isNumber || ["."].contains(character)
         }
 
         // MARK: Private Functions
