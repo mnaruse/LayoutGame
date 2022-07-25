@@ -49,8 +49,7 @@ struct Topic002CardView: View {
 
             case let .measurement(value: value, unit: unit, formattedUnit: formattedUnit):
                 // TODO: フォントサイズ
-                // TODO: `formattedUnit` 使うこと
-                Text("\(String(format: "%.1f", value))\(unit.symbol)")
+                Text("\(String(format: "%.1f", value))\(formattedUnit?.symbol ?? unit.symbol)")
                     .font(.title)
             }
         }
