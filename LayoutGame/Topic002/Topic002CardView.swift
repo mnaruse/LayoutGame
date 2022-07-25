@@ -13,13 +13,6 @@ struct Topic002CardView: View {
 
     var vital: Vital
 
-    private var dateComponentsFormatter: DateComponentsFormatter {
-        let formatter = DateComponentsFormatter()
-        formatter.unitsStyle = .full
-        formatter.allowedUnits = [.day, .hour, .minute]
-        return formatter
-    }
-
     // MARK: Body
 
     var body: some View {
@@ -34,29 +27,12 @@ struct Topic002CardView: View {
                     .foregroundColor(.secondary)
             }
             Spacer(minLength: 16)
-            switch vital.value {
-            case let .number(value: value, style: style, customUnit: customUnit):
-                let formatter = numberFormatter(style: style)
-                modifiedText("\(formatter.string(from: value as NSNumber) ?? "")\(customUnit ?? "")")
-
-            case let .dateComponents(dateComponents):
-                modifiedText(dateComponentsFormatter.string(from: dateComponents) ?? "")
-
-            case let .measurement(value: value, unit: unit, formattedUnit: formattedUnit):
-                modifiedText("\(String(format: "%.1f", value))\(formattedUnit?.symbol ?? unit.symbol)")
-            }
+            modifiedText(vital.value.text)
         }
         .padding(.vertical, 8)
     }
 
     // MARK: Private Functions
-
-    private func numberFormatter(style: NumberFormatter.Style) -> NumberFormatter {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = style
-        formatter.locale = .current
-        return formatter
-    }
 
     /// 数値か否かによって、テキストを装飾する。
     /// - Parameter text: 装飾対象の文字列

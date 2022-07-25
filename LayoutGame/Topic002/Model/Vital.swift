@@ -27,6 +27,39 @@ extension Vital {
         case number(value: Double, style: NumberFormatter.Style, customUnit: String? = nil)
         case dateComponents(_ dateComponents: DateComponents)
         case measurement(value: Double, unit: Dimension, formattedUnit: Dimension? = nil)
+
+        // MARK: Private Computed Properties
+
+        private var dateComponentsFormatter: DateComponentsFormatter {
+            let formatter = DateComponentsFormatter()
+            formatter.unitsStyle = .full
+            formatter.allowedUnits = [.day, .hour, .minute]
+            return formatter
+        }
+
+        // MARK: Internal Computed Properties
+        
+        /// 値のデータを整理し、単位付きの文字列に変換した文字列。
+        var text: String {
+            switch self {
+            case let .number(value, style, customUnit):
+                let formatter = numberFormatter(style: style)
+                return "\(formatter.string(from: value as NSNumber) ?? "")\(customUnit ?? "")"
+            case let .dateComponents(dateComponents):
+                return dateComponentsFormatter.string(from: dateComponents) ?? ""
+            case let .measurement(value, unit, formattedUnit):
+                return "\(String(format: "%.1f", value))\(formattedUnit?.symbol ?? unit.symbol)"
+            }
+        }
+
+        // MARK: Private Functions
+
+        private func numberFormatter(style: NumberFormatter.Style) -> NumberFormatter {
+            let formatter = NumberFormatter()
+            formatter.numberStyle = style
+            formatter.locale = .current
+            return formatter
+        }
     }
 }
 
