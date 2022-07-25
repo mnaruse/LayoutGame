@@ -13,6 +13,9 @@ struct HomeView: View {
             NavigationLink(destination: Try001View()) {
                 Text("001")
             }
+            NavigationLink(destination: Topic002View()) {
+                Text("002")
+            }
         }
         .navigationTitle("レイアウト一本勝負")
     }

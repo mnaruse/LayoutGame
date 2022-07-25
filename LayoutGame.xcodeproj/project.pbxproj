@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28628328288B6C6900B96587 /* Vital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28628327288B6C6900B96587 /* Vital.swift */; };
+		28628329288B6C7300B96587 /* Vital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28628327288B6C6900B96587 /* Vital.swift */; };
+		2862832B288B6D7F00B96587 /* Topic002View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2862832A288B6D7F00B96587 /* Topic002View.swift */; };
+		2862832C288B6D8300B96587 /* Topic002View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2862832A288B6D7F00B96587 /* Topic002View.swift */; };
+		2862832E288B6FEC00B96587 /* Topic002DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2862832D288B6FEC00B96587 /* Topic002DetailView.swift */; };
+		2862832F288B6FEC00B96587 /* Topic002DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2862832D288B6FEC00B96587 /* Topic002DetailView.swift */; };
+		28628331288B72B400B96587 /* Topic002CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28628330288B72B400B96587 /* Topic002CardView.swift */; };
+		28628332288B72B400B96587 /* Topic002CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28628330288B72B400B96587 /* Topic002CardView.swift */; };
 		28632C48287F001600F07F80 /* LayoutGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28632C47287F001600F07F80 /* LayoutGameApp.swift */; };
 		28632C4A287F001600F07F80 /* Try001View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28632C49287F001600F07F80 /* Try001View.swift */; };
 		28632C4C287F001700F07F80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28632C4B287F001700F07F80 /* Assets.xcassets */; };
@@ -85,6 +93,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		28628327288B6C6900B96587 /* Vital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vital.swift; sourceTree = "<group>"; };
+		2862832A288B6D7F00B96587 /* Topic002View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic002View.swift; sourceTree = "<group>"; };
+		2862832D288B6FEC00B96587 /* Topic002DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic002DetailView.swift; sourceTree = "<group>"; };
+		28628330288B72B400B96587 /* Topic002CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic002CardView.swift; sourceTree = "<group>"; };
 		28632C44287F001600F07F80 /* LayoutGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28632C47287F001600F07F80 /* LayoutGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutGameApp.swift; sourceTree = "<group>"; };
 		28632C49287F001600F07F80 /* Try001View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Try001View.swift; sourceTree = "<group>"; };
@@ -140,6 +152,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28628325288B6C3000B96587 /* Topic002 */ = {
+			isa = PBXGroup;
+			children = (
+				28628330288B72B400B96587 /* Topic002CardView.swift */,
+				2862832D288B6FEC00B96587 /* Topic002DetailView.swift */,
+				2862832A288B6D7F00B96587 /* Topic002View.swift */,
+				28628326288B6C5000B96587 /* Model */,
+			);
+			path = Topic002;
+			sourceTree = "<group>";
+		};
+		28628326288B6C5000B96587 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				28628327288B6C6900B96587 /* Vital.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		28632C3B287F001600F07F80 = {
 			isa = PBXGroup;
 			children = (
@@ -167,11 +198,12 @@
 		28632C46287F001600F07F80 /* LayoutGame */ = {
 			isa = PBXGroup;
 			children = (
-				28632C47287F001600F07F80 /* LayoutGameApp.swift */,
 				28632C72287F083200F07F80 /* HomeView.swift */,
+				28632C47287F001600F07F80 /* LayoutGameApp.swift */,
 				28632C49287F001600F07F80 /* Try001View.swift */,
 				28632C4B287F001700F07F80 /* Assets.xcassets */,
 				28632C4D287F001700F07F80 /* Preview Content */,
+				28628325288B6C3000B96587 /* Topic002 */,
 			);
 			path = LayoutGame;
 			sourceTree = "<group>";
@@ -446,7 +478,11 @@
 			files = (
 				28632C73287F083200F07F80 /* HomeView.swift in Sources */,
 				28632C4A287F001600F07F80 /* Try001View.swift in Sources */,
+				2862832E288B6FEC00B96587 /* Topic002DetailView.swift in Sources */,
+				28628328288B6C6900B96587 /* Vital.swift in Sources */,
+				2862832B288B6D7F00B96587 /* Topic002View.swift in Sources */,
 				28632C48287F001600F07F80 /* LayoutGameApp.swift in Sources */,
+				28628331288B72B400B96587 /* Topic002CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,11 +508,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				28632C88287F145700F07F80 /* NotificationController.swift in Sources */,
+				2862832C288B6D8300B96587 /* Topic002View.swift in Sources */,
 				28632C8C287F145700F07F80 /* ComplicationController.swift in Sources */,
+				28628332288B72B400B96587 /* Topic002CardView.swift in Sources */,
 				28632CBB287F14AD00F07F80 /* LayoutGameApp.swift in Sources */,
 				28632CBC287F14B200F07F80 /* Try001View.swift in Sources */,
 				28632CBD287F14B500F07F80 /* HomeView.swift in Sources */,
+				28628329288B6C7300B96587 /* Vital.swift in Sources */,
 				28632C8A287F145700F07F80 /* NotificationView.swift in Sources */,
+				2862832F288B6FEC00B96587 /* Topic002DetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
